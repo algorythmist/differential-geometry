@@ -5,27 +5,38 @@
 
 ### Virtual Environment
 
->> mkdir venv
->>
->> python -m venv venv
->>
->> source venv\Scripts\activate
->>
->> pip install -r requirements.txt
 
+#### Anaconda Environment
 
-### Anaconda Environment
+```commandline
+conda activate computational-physics
 
->> conda activate computational-physics
->>
->> conda install --file requirements.txt
+conda install --file requirements.txt
+```
+
+Set up a virtual environment wihout Anaconda
+
+```commandline
+mkdir venv
+
+python -m venv venv
+
+source venv\Scripts\activate
+
+pip install -r requirements.txt
+```
 
 ### Start Jupyter
 
 The first time, install the jupyter kernel
 
->> ipython kernel install --name "differential-geometry" --user
+```commandline
+ipython kernel install --name "differential-geometry" --user
+```
 
 Then start the notebook
 
->>jupyter notebook
+```commandline
+jupyter notebook
+```
+
